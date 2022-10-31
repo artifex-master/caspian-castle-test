@@ -1,10 +1,12 @@
 .head {
   width: 100%;
-  height: 100vh;
+
   background-image: url('../images/bg-img.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
+  height: 100%;
+  padding-bottom: 30px;
 }
 
 .head-toyota-img {
@@ -12,12 +14,14 @@
   height: 354px;
   position: absolute;
   right: 0;
+  z-index: 1;
   top: 20%;
 }
 
 .header {
   width: 100%;
   padding-top: 35px;
+  margin-bottom: 113px;
 }
 
 .header-wrapper {
@@ -81,8 +85,39 @@
 .mobile-header__menu.active .line-three { transform: translateY(-13px) rotate(-45deg); }
 
 
+.header-center {
+  position: relative;
+  z-index: 2;
+}
 
+.header-center__title {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 61px;
+  font-style: normal;
+  color: #FFF;
 
+  margin-bottom: 18px;
+}
+
+.header-center__subtitle {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFF;
+
+  margin-bottom: 91px;
+}
+
+.header-center__btn {
+  display: flex;
+  gap: 27px;
+}
+
+.header-center__btn button {
+  padding: 20px 77px;
+
+}
 
 @media only screen and (max-width: 1440px) {
   .header__nav {
@@ -91,6 +126,10 @@
 
   .header__phone {
     font-size: 23px;
+  }
+
+  .head-toyota-img {
+    opacity: 0.6;
   }
 
 }
@@ -132,6 +171,26 @@
 
 }
 
+@media only screen and (max-width: 689px) {
+  .header-center__title {
+    font-size: 45px;
+  }
+
+  .header-center__subtitle {
+    font-size: 25px;
+  }
+
+  .header-center__btn {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .head {
+    height: 100%;
+    padding-bottom: 60px;
+  }
+
+}
 
 @media only screen and (max-width: 600px) {
   .head-toyota-img {

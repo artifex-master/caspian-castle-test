@@ -7,3 +7,21 @@ html {
   width: 80%;
   margin: 0 auto;
 }
+
+.btn-primary {
+  width: max-content;
+  background: #2F2F2F;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFF;
+  border: 0;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #7C18F6;
+  transition: 0.25s ease;
+}
