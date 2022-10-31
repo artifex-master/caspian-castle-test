@@ -25,3 +25,289 @@ html {
   background: #7C18F6;
   transition: 0.25s ease;
 }
+
+
+
+
+
+
+/*****************************************************************************************************
+  # Head Section
+*****************************************************************************************************/
+.head {
+  width: 100%;
+
+  background-image: url('../images/bg-img.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.head-toyota-img {
+  width: 552px;
+  height: 354px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: 20%;
+}
+
+.header {
+  width: 100%;
+  padding-top: 35px;
+  margin-bottom: 113px;
+}
+
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header__nav {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__phone {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 75px;
+  color: #FFF;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__nav ul {
+  display: flex;
+  gap: 50px;
+}
+
+.header__nav ul li a {
+  color: #FFF;
+}
+
+.mobile-header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 8px;
+
+  position: fixed;
+  visibility: hidden;
+}
+
+.line {
+  width: 35px;
+  height: 2px;
+  background: #FFF;
+}
+
+.mobile-header__menu.active .line-one { transform: translateY(7px) rotate(45deg); }
+.mobile-header__menu.active .line-two { visibility: hidden; transition: 0.001s; }
+.mobile-header__menu.active .line-three { transform: translateY(-13px) rotate(-45deg); }
+
+
+.header-center {
+  position: relative;
+  z-index: 2;
+}
+
+.header-center__title {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 61px;
+  font-style: normal;
+  color: #FFF;
+
+  margin-bottom: 18px;
+}
+
+.header-center__subtitle {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFF;
+
+  margin-bottom: 91px;
+}
+
+.header-center__btn {
+  display: flex;
+  gap: 27px;
+}
+
+.header-center__btn button {
+  padding: 20px 77px;
+
+}
+
+
+/********************************************************************************************
+  # Секция "Наши Авто"
+*********************************************************************************************/
+.our-cars {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+
+  padding-top: 30px;
+  padding-bottom: 84px;
+}
+
+.our-cars-left-lines-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(-60px) rotate(20deg);
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.our-cars-wrapper {
+  width: 100%;
+}
+
+.our-cars__title {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 31px;
+  color: #2F2F2F;
+  text-transform: uppercase;
+
+  margin-bottom: 15px;
+}
+
+.our-cars__line {
+  margin-bottom: 46px;
+}
+
+.our-cars__card-wrapper {
+  width: 100%;
+}
+
+.our-cars__card-img {
+  width: 410px;
+  height: 221px;
+
+  margin-bottom: 18px;
+}
+
+.our-cars__card-info {
+  width: 20%;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2F2F2F;
+
+  margin-bottom: 11px;
+}
+
+.our-cars__card-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2F2F2F;
+
+  margin-bottom: 10px;
+}
+
+.our-cars__card-btn button {
+  padding: 14px 58px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .header__nav {
+    font-size: 15px;
+  }
+
+  .header__phone {
+    font-size: 23px;
+  }
+
+  .head-toyota-img {
+    opacity: 0.6;
+  }
+
+}
+
+@media only screen and (max-width: 1280px) {
+  .header .container {
+    width: 85%;
+  }
+  
+  .header__nav {
+    font-size: 13px;
+  }
+
+  .header__phone {
+    font-size: 21px;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .mobile-header__menu {
+    position: absolute;
+    visibility: visible;
+    right: 0;
+    top: 50%;
+  }
+
+  .header__nav {
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .header__phone {
+    position: fixed;
+    visibility: hidden;    
+  }
+
+
+
+}
+
+@media only screen and (max-width: 689px) {
+  .header-center__title {
+    font-size: 45px;
+  }
+
+  .header-center__subtitle {
+    font-size: 25px;
+  }
+
+  .header-center__btn {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .head {
+    height: 100%;
+    padding-bottom: 60px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .head-toyota-img {
+    display: none;
+  }
+
+}
+
+
