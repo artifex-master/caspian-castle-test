@@ -41,7 +41,6 @@ html {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
-  height: 100vh;
   padding-bottom: 30px;
 }
 
@@ -434,7 +433,6 @@ html {
   }
 
   .head {
-    height: 100%;
     padding-bottom: 60px;
   }
 
