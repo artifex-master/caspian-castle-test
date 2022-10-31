@@ -26,6 +26,18 @@ html {
   transition: 0.25s ease;
 }
 
+.btn-disabled {
+  width: max-content;
+  background:  #D9D9D9;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFF;
+  border: 0;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer; 
+}
 
 
 
@@ -377,6 +389,59 @@ html {
   flex: 0 0 10%;
 }
 
+/********************************************************************************************
+  # Секция "Обратная связь"
+*********************************************************************************************/
+.feedback {
+  width: 100%;
+  padding: 83px 0;
+  background: linear-gradient(97.61deg, #8F4AFD 24.22%, #A05CF9 48.58%, #841FFF 89.48%);
+
+}
+
+.feedback-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.feedback-wrapper-center {
+  display: flex;
+  gap: 55px;
+}
+
+.feedback__title {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 31px;
+  color: #FFF;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback__form {
+  display: flex;
+  gap: 50px;
+}
+
+.feedback__form-input {
+  background: #FFF;
+  padding: 17px 34px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2F2F2F;
+  border-radius: 8px;
+  border: 0;
+
+}
+
+.feedback__form button {
+  padding: 17px 86px;
+}
+
 @media only screen and (max-width: 1840px) {
   .our-services__card-wrapper {
     width: 100%;
@@ -452,6 +517,14 @@ html {
 
 }
 
+@media only screen and (max-width: 1230px) {
+  .feedback-wrapper-center {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+}
+
 @media only screen and (max-width: 1024px) {
   .mobile-header__menu {
     position: absolute;
@@ -511,7 +584,24 @@ html {
     justify-content: center;    
   }
 
+  .feedback__title {
+    justify-content: left;
+  }
+  
+  .feedback__form {
+    flex-direction: column;
+  }
 
+  .feedback-wrapper {
+
+    justify-content: left;
+  }
+
+  .feedback-wrapper-center {
+    width: 100%;
+    display: flex;
+    gap: 55px;
+  }
 
 
 
