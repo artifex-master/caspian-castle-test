@@ -161,7 +161,6 @@ html {
 *********************************************************************************************/
 .our-cars {
   width: 100%;
-  height: 100%;
 
   position: relative;
 
@@ -198,17 +197,24 @@ html {
 
 .our-cars__card-wrapper {
   width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+
+.our-cars__card {
+  flex: 0 0 25%;
 }
 
 .our-cars__card-img {
-  width: 410px;
-  height: 221px;
+  width: 360px;
+  height: 201px;
 
   margin-bottom: 18px;
 }
 
 .our-cars__card-info {
-  width: 20%;
+  width: 80%;
   font-weight: 300;
   font-size: 20px;
   line-height: 24px;
@@ -228,6 +234,23 @@ html {
 
 .our-cars__card-btn button {
   padding: 14px 58px;
+}
+
+.new {
+  width: 100%;
+  height: 100vh;
+  background: yellowgreen;
+}
+
+
+@media only screen and (max-width: 1733px) {
+  .our-cars__card-wrapper {
+    gap: 30px;
+  }
+  .our-cars__card-img {
+    width: 100%;
+  }
+  
 }
 
 @media only screen and (max-width: 1440px) {
@@ -258,6 +281,16 @@ html {
     font-size: 21px;
   }
 
+  .our-cars__card-img {
+    width: 80%;
+    height: 40%;
+  }
+
+  .our-cars__card-info {
+    font-size: 16px;
+
+  }
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -276,6 +309,26 @@ html {
   .header__phone {
     position: fixed;
     visibility: hidden;    
+  }
+
+  .our-cars__card-info {
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .our-cars__card-price {
+    font-size: 16px;
+
+  }
+
+  .our-cars__card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .our-cars__card {
+    flex: 0 0 40%;
   }
 
 
@@ -307,6 +360,27 @@ html {
   .head-toyota-img {
     display: none;
   }
+
+  .our-cars__card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+  }
+
+  .our-cars__card {
+    flex: 0 0 100%;
+  }
+
+  .our-cars__card-img {
+    width: 100%;
+    height: 60%;
+  }
+
+  .our-cars {
+    padding-bottom: 84px;
+  }
+
 
 }
 
