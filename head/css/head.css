@@ -1,0 +1,28 @@
+.head {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/bg-img.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.head-toyota-img {
+  width: 552px;
+  height: 354px;
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .head-toyota-img {
+    display: none;
+  }
+
+
+}
+
+
