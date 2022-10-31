@@ -15,13 +15,128 @@
   top: 20%;
 }
 
+.header {
+  width: 100%;
+  padding-top: 35px;
+}
+
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header__nav {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__phone {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 75px;
+  color: #FFF;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__nav ul {
+  display: flex;
+  gap: 50px;
+}
+
+.header__nav ul li a {
+  color: #FFF;
+}
+
+.mobile-header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 8px;
+
+  position: fixed;
+  visibility: hidden;
+}
+
+.line {
+  width: 35px;
+  height: 2px;
+  background: #FFF;
+}
+
+.mobile-header__menu.active .line-one { transform: translateY(7px) rotate(45deg); }
+.mobile-header__menu.active .line-two { visibility: hidden; transition: 0.001s; }
+.mobile-header__menu.active .line-three { transform: translateY(-13px) rotate(-45deg); }
+
+
+
+
+
+@media only screen and (max-width: 1440px) {
+  .header__nav {
+    font-size: 15px;
+  }
+
+  .header__phone {
+    font-size: 23px;
+  }
+
+}
+
+@media only screen and (max-width: 1280px) {
+  .header .container {
+    width: 85%;
+  }
+  
+  .header__nav {
+    font-size: 13px;
+  }
+
+  .header__phone {
+    font-size: 21px;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .mobile-header__menu {
+    position: absolute;
+    visibility: visible;
+    right: 0;
+    top: 50%;
+  }
+
+  .header__nav {
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .header__phone {
+    position: fixed;
+    visibility: hidden;    
+  }
+
+
+
+}
 
 
 @media only screen and (max-width: 600px) {
   .head-toyota-img {
     display: none;
   }
-
 
 }
 
