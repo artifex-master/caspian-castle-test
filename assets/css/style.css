@@ -364,7 +364,7 @@ html {
   .our-cars__card-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 60px;
 
   }
 
