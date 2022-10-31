@@ -43,6 +43,7 @@ html {
 
 
 
+
 /*****************************************************************************************************
   # Head Section
 *****************************************************************************************************/
@@ -538,6 +539,91 @@ html {
   top: 40%;
 }
 
+
+footer {
+  width: 100%;
+  background: #2F2F2F;
+  padding-top: 19px;
+  padding-bottom: 25px;
+}
+
+.footer-wrapper-center {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.footer__logo {
+  padding-top: 40px;
+}
+
+.footer__form {
+  background: #646464;
+  padding: 24px 32px;
+
+}
+
+.footer-form__title {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 24px;
+}
+
+.footer-form__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.footer-form__input {
+  background: #FFF;
+  width: 304px;
+  height: 60px;
+}
+
+.footer-btn button {
+  width: 100%;
+  padding: 19px 98px;
+}
+
+.footer__addr-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFF;
+
+  margin-bottom: 12px;
+}
+
+.footer-addr-txt {
+  width: 60%;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFF;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-contacts__icon-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-item {
+  flex: 0 0 20%;
+}
+
 @media only screen and (max-width: 1840px) {
   .our-services__card-wrapper {
     width: 100%;
@@ -785,6 +871,17 @@ html {
     height: 100%;
   
   }
+}
+
+@media only screen and (max-width: 360px) {
+  .footer-form__input {
+    width: 220px;
+  }
+  .footer-btn button {
+    width: 100%;
+    padding: 19px 60px;
+  }
+
 }
 
 
