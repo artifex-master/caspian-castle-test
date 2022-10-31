@@ -331,6 +331,52 @@ html {
 }
 
 
+/********************************************************************************************
+  # Секция "Наc выбирают"
+*********************************************************************************************/
+.we-are-chosen {
+  width: 100%;
+  padding-bottom: 45px;
+}
+
+.we-are-chosen-wrapper {
+  width: 100%;
+}
+
+.we-are-chosen-wrapper-center {
+  position: relative;
+}
+
+.we-are-chosen__title {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 31px;
+  color: #2F2F2F;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: right;
+  margin-bottom: 25px;
+}
+
+.we-are-chosen__line {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 45px;
+
+}
+
+.we-are-chosen__partners-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 90px;
+}
+
+.partner {
+  flex: 0 0 10%;
+}
+
 @media only screen and (max-width: 1840px) {
   .our-services__card-wrapper {
     width: 100%;
